@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+     
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    
+.departments {
+      background: #f2f2f2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .departments h2 {
+      color: #004080;
+      margin-bottom: 30px;
+    }
+
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .dept-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .dept-card h3 {
+      margin-top: 0;
+      color: #004080;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      height: 600px; 
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+     
+    }
+
+    /* Lightbox Styles */
+    #lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(255,255,255,0.4);
+    }
+
+    #lightbox:active {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     Welcome to Our College Gallery
+  </header>
+
+<body><section class="departments"><div class="dept-grid">
+     <section class="gallery">
+<div class="dept-grid">
+ 
+  <h1> <img src="campus1.png" alt="Campus 1">campus 1</h1></div>
+   <div class="dept-grid">
+   <h1> <img src="campus2.png" alt="Campus 2">campus 2</h1></div>
+   <div class="dept-grid">
+    <h1><img src="laiblery.png" alt="Library">library</h1></div>
+    <div class="dept-grid">
+    <h1><img src="canteen.webp" alt="Canteen">Canteen</h1></div>
+    
+    
+</section></div>
+  </section>
+
+  <div id="lightbox">
+    <img id="lightbox-img" src="" alt="Large Preview">
+  </div>
+
+  <footer>
+    &copy; 2025 Your College Name. All rights reserved.
+  </footer>
+
+  
+</body>
+</html>

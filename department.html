@@ -1,0 +1,134 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Front Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+.departments {
+      background: #f2f2f2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .departments h2 {
+      color: #004080;
+      margin-bottom: 30px;
+    }
+
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .dept-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .dept-card h3 {
+      margin-top: 0;
+      color: #004080;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+     
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    * Footer */
+    footer {
+      
+      color: rgb(15, 3, 139);
+      padding: 40px 20px;
+    }
+
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #2f0272;
+    }
+
+    /* Footer */
+     </style>
+</head>
+<body><section class="departments">
+
+    <h2>Our Departments</h2>
+    <div class="dept-grid">
+         <section class="gallery">
+      <div class="dept-card">
+         <img src="s.png" alt="Girl in a jacket" width="200" height="230">
+
+        <h3>Computer Science</h3>
+        <p>Programming, AI, Software Engineering</p>
+      </div>
+      <div class="dept-card">
+         <img src="mech.png" alt="Girl in a jacket" width="200" height="230">
+
+        <h3>Mechanical Engineering</h3>
+        <p>Machines, Thermodynamics, Design</p>
+      </div>
+      <div class="dept-card">
+         <img src="elect.png" alt="Girl in a jacket" width="200" height="230">
+
+        <h3>Electrical Engineering</h3>
+        <p>Circuits, Power, Electronics</p>
+      </div>
+      
+    
+      </section>
+    </div>
+  </section>
+<footer>
+<div class="copyright">
+      &copy; 2025 Rungta College. All rights reserved.
+    </div>
+  </footer>
+
+  </body>
+</html>

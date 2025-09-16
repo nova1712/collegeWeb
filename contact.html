@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - College</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      height: 100px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .address-box {
+      background: #fff;
+      padding: 20px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .address-box h2 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    .map-box {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .map-box iframe {
+      width: 50%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    form input,
+    form textarea {
+      width: 60%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: #003366;
+      color: #fff;
+      padding: 10px 10px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: #0055aa;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .contact-section {
+        padding: 10px;
+      }
+
+      .map-box iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Contact Our College
+  </header>
+
+  <section class="contact-section">
+
+    <!-- Address Box -->
+    <div class="address-box">
+      <h2>College Address</h2>
+      <p>
+        Rungta College of Engineering and Technology,<br />
+        Rungta Educational Campus, Kurud Road,<br />
+        Bhilai, Chhattisgarh – 490033<br />
+        Phone: +91-1234567890<br />
+        Email: contact@wwcollege.edu.in
+      </p>
+    </div>
+
+   
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.0314817172075!2d81.32780047499433!3d21.18335818163448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293da2c4ee13f1%3A0x41b32439960fcd44!2sRungta%20College%20of%20Engineering%20and%20Technology%20(RCET)%2C%20R2%20Campus!5e0!3m2!1sen!2sin!4v1691946303755!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    
+    <div class="form-box">
+      <h2>We want to hear from you</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Rungta College. All rights reserved.
+  </footer>
+
+</body>
+</html>

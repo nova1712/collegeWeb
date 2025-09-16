@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Departments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .dept-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .dept-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .dept-card h2 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .dept-card p {
+      font-size: 14px;
+      color: #333;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      height: 600px; 
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Our College Departments</h1>
+  </header>
+
+  <!-- Departments Grid -->
+  <div class="container">
+    <section class="gallery">
+    <div class="dept-grid">
+      <div class="dept-card">
+        <h2>Computer Science</h2>
+        <p>Focus on AI, software development, data science, and cybersecurity.</p>
+      </div>
+      <div class="dept-card">
+        <h2>Mechanical Engineering</h2>
+        <p>Thermodynamics, robotics, and machine design are key areas of focus.</p>
+      </div>
+      <div class="dept-card">
+        <h2>Electrical Engineering</h2>
+        <p>Power systems, circuits, and control systems form the core subjects.</p>
+      </div>
+      <div class="dept-card">
+        <h2>Civil Engineering</h2>
+        <p>Includes structural design, environmental engineering, and construction.</p>
+      </div>
+      <div class="dept-card">
+
+        <h2>Electronics & Communication</h2>
+        <p>Specializing in communication systems, microprocessors, and IoT.</p>
+      </div>
+     
+     </div></section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rungta College. All rights reserved.
+  </footer>
+
+</body>
+</html>

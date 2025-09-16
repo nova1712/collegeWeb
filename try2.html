@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 20px;
+    }
+
+    .footer-column h3 {
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 10px 0;
+    }
+
+    .footer-column ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      background-color: white;
+      color: #002147;
+      border-radius: 50%;
+      line-height: 40px;
+      text-align: center;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background-color: #ffcc00;
+      color: #002147;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    /* Media responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-column {
+        margin: 10px 0;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+
+      <!-- College Info -->
+      <div class="footer-column">
+        <h3>Rungta College</h3>
+        <p>Rungta Knowledge City, Bhilai<br>Chhattisgarh, India</p>
+        <p>Email: info@rungta.ac.in<br>Phone: +91-12345-67890</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About College</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="footer-column">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/@rungtacollege" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Rungta College. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
